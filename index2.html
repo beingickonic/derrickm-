@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Course Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+  <form action="insert.php" method="POST">
+    <label>Full Name:</label>
+    <input type="text" name="fullname" required><br>
+
+    <label>Email Address:</label>
+    <input type="email" name="email" required><br>
+
+    <label>Course:</label>
+    <select name="course" required>
+      <option value="">-- Select Course --</option>
+      <option value="Web Design">Web Design</option>
+      <option value="Java Programming">Java Programming</option>
+      <option value="Cyber Security">Cyber Security</option>
+    </select><br>
+
+    <input type="submit" name="action" value="Add to Table">
+    <input type="submit" name="action" value="Display into Table">
+  </form>
+</body>
+</html>
